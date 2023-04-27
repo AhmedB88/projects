@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <from class="from" id="login" onsubmit="correction()">
+            <h1 class="form-title" >Login</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input id="login-username-email" type="text" class="form-input" autofocus placeholder="username or E-mail">
+                <div id="email-error-massege" class="form-input-error-message form-hidden" >Invalid username/password combination</div>
+            </div>
+            <div class="form-input-group">
+              
+                <input type="password" class="form-input" autofocus placeholder="password">
+                <div class="form-input-error-message" ></div>
+            </div>  
+            <button id="login-continue" class="form-button" type="submit" >Continue</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+            <p class="form-text">
+                <a onclick="createAccountSection()" href="#" id="linkCreateAccount" class="form-link">don't have an account?</a>
+            </p>
+        </from>
+  
+        <from class="from form-hidden" id="createAccount">
+            <h1 class="form-title" >Create an Account </h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input id="createAccountUsername" type="text" class="form-input" autofocus placeholder="username">
+                <div id="form-input-error-message" class="form-input-error-message form-hidden" > Username must be 10 characters / unavailable username  </div>
+            </div>
+            <div class="form-input-group">
+                <input id="createAccountEmail" type="text" class="form-input" autofocus placeholder="E-mail adresse">
+                <div id="email-error-message" class="form-input-error-message form-hidden" >E-mail is not correrct</div>
+            </div>  
+            <div class="form-input-group">
+                <input id="password" type="password" class="form-input " autofocus placeholder="password">
+                <div id="password-error-message" class="form-input-error-message form-hidden "  >password must be matched</div>
+            </div>
+            <div class="form-input-group">
+                <input id="passwordConfirm" type="password" class="form-input " autofocus placeholder="Confirm password">
+                <div class="form-input-error-message" ></div>
+            </div>    
+            <button id="createAccount-section" class="form-button" type="submit" >Continue</button>
+            <p class="form-text">
+                <a onclick="loginSection()" href="#" id="linkLogin" class="form-link">Already have an account? Sign in</a>
+            </p>
+        </from>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

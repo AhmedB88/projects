@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left-section-div ">
+            <button class="link-button"><a href="#">HOME</a></button>
+            <button class="link-button"><a href="#">CONTACT</a></button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="social-media-div" >
+            <a href="https://www.instagram.com/ahmed10000t/"><img class="social-media-img" src="bilder/insta-icon.png"></a>
+            <a href=""><img class="social-media-img" src="bilder/whatsapp-icon.png"></a>
+        </div>
+    </div>
+    <div id="main" class="main-section-div">
+        <div class="main-left-section-div">
+            <P>ICH BIN</P>
+            <P>AHMAD BAKO </P>
+            <P>START UP PROGRAMMER</P>
+            <button onclick="moreAboutMe()" class="next-previous">MORE ABOUT ME</button>
+        </div>
+        <div class="main-right-section-div">
+            <img class="me-img" src="bilder/ME.PNG">
+        </div>
+    </div>
+    <div id="description" class="main-section-div hidden-form ">
+        <div class="Bewerbung-div">
+            <P>Sehr geehrte Damen und Herren,</P>
+            <p>hiermit bewerbe ich mich bei Ihnen um eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung. Ich habe mich für diesen Beruf entschieden, da ich meine Leidenschaft für Computer und Programmierung in meinem Beruf ausüben möchte.
+            Zurzeit arbeite ich als monteur und lerne dabei in meinen Freizeit selbstständig zu programmieren. 
+            <p>
+            bis jetzt habe ich gelernt wie man in HTML, CSS, JAVASCRIPT, und C++ programmiert.
+            Am besten mag ich mit C++ zuarbeiten, da ich die gelernte algorithem verwenden kann.
+            Im moment versuche durch Bücher und Artikels im Internet mich beizubringen wie man am besten alorithem schreibt.
+            Leider habe ich die 11.Klasse abgebrochen weil ich wegen finnaziele Probleme.</p>
+            <p>
+            Neben meinem starken Interesse an der Informatik bringe ich auch eine hohe Motivation und Lernbereitschaft mit. Ich bin bereit, mich intensiv mit neuen Technologien und Programmiersprachen auseinanderzusetzen und arbeite gerne im Team, um gemeinsam Lösungen zu erarbeiten.
+            </p>
+            <p>
+                Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen, um mich Ihnen persönlich vorstellen und meine Motivation für diesen Beruf weiter erläutern zu können.
+                Mit freundlichen Grüßen</p>
+
+            <button onclick="previousButton()" class="next-previous">PREVIOUS</button>
+            <button onclick="nextButton()" class="next-previous">NEXT</button>
+            
+        </div>
+      
+    </div>
+
+    <div id="choosing-section" class="main-section-div hidden-form">
+        <div class="choosing-section-div">
+            <button class="choosing-button"><a class="my-doc" href="#">LEBENSLAUF</a></button>
+            <a href="bilder/Lebenslauf.pdf" target="_blank"><img class="preview" src="bilder/Lebenslauf.jpg" alt=""></a>
+        </div>
+        <div class="choosing-section-div">
+            <button  class="choosing-button"><a class="my-doc" href="#">ZEUGNIS</a></button>
+            <a href="bilder/mittleren Schulabschluss.jpg"  target="_blank"><img class="preview" src="bilder/mittleren Schulabschluss.jpg" alt=""></a>
+        </div>
+        <div class="choosing-section-div">
+            <button class="choosing-button"><a class="my-doc" href="#">PROJEKTEN</a></button>
+            <a href=""  target="_blank"><img class="preview" src="bilder/Html-source-code.png" alt=""></a>
+        </div>
+        <div class="button-div"> 
+            <button onclick="previousButtonEnd()" class="next-previous">PREVIOUS</button>
+            <button onclick="nextButtonEnd()" class="next-previous">NEXT</button>
+       
+        </div>
+    </div>
+    <div class="end-section">
+
+    </div>
+ 
+    <script class="lebenslauf-img" src="main.js"></script>
+</body>
+</html>
