@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="link.css">
+
+
+
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left-section-div ">
+            <button class="link-button"><a href="#">HOME</a></button>
+            <button class="link-button"><a href="mailto:ahmedbako999@gmail.com">E-MAIL</a></button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="social-media-div" >
+            <a href="https://www.instagram.com/ahmed10000t/"><img class="social-media-img" src="bilder/insta-icon.png"></a>
+        </div>
+    </div>
+    <div id="main" class="main-section-div">
+        <div class="main-left-section-div">
+            <P>ICH BIN</P>
+            <P>AHMAD BAKO </P>
+            <P>START UP PROGRAMMER</P>
+            <button onclick="moreAboutMe()" class="next-previous">MORE ABOUT ME</button>
+        </div>
+        <div class="main-right-section-div">
+            <img class="me-img" src="bilder/ME.PNG">
+        </div>
+    </div>
+    <div id="description" class="main-section-div hidden-form ">
+        <div class="Bewerbung-div">
+            <P>
+                Sehr geehrte Damen und Herren,
+            </P>
+            <p class="application-text">
+                hiermit bewerbe ich mich bei Ihnen um eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung. Ich habe mich für diesen Beruf entschieden,
+                da ich meine Leidenschaft für Computer und Programmierung gerne in meinem zukünftigen Beruf ausüben möchte.
+                Derzeit arbeite ich als Monteur und nutze meine Freizeit, um selbstständig Programmieren zu lernen.
+            </P>
+            <p class="application-text">
+                Ich habe bereits Erfahrung im Programmieren mit HTML, CSS, JavaScript und C++.
+                Besonders gerne arbeite ich mit C++, da ich die erlernten Algorithmen anwenden kann.
+                Momentan versuche ich durch Bücher und Artikel im Internet mein Wissen über Algorithmik zu vertiefen.
+            </p>
+            <p class="application-text">
+                Neben meinem starken Interesse an der Informatik bringe ich eine hohe Motivation und Lernbereitschaft mit.
+                Ich bin bereit, mich intensiv mit neuen Technologien und Programmiersprachen auseinanderzusetzen und arbeite gerne im Team,
+                um gemeinsam Lösungen zu erarbeiten.
+            </p>
+            <p class="application-text">
+                Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen, um mich Ihnen persönlich vorstellen und meine Motivation für diesen Beruf weiter erläutern zu können.
+            </p>
+
+            <button onclick="previousButton()" class="next-previous">PREVIOUS</button>
+            <button onclick="nextButton()" class="next-previous">NEXT</button>
+            
+        </div>
+      
+    </div>
+
+    <div id="choosing-section" class="main-section-div hidden-form">
+        <div class="choosing-section-div">
+            <button class="choosing-button"><a class="my-doc" href="#">LEBENSLAUF</a></button>
+            <a href="bilder/Lebenslauf.pdf" target="_blank"><img class="preview" src="bilder/Lebenslauf.jpg" alt=""></a>
+        </div>
+        <div class="choosing-section-div">
+            <button  class="choosing-button"><a class="my-doc" href="#">ZEUGNIS</a></button>
+            <a href="bilder/mittleren Schulabschluss.jpg"  target="_blank"><img class="preview" src="bilder/mittleren Schulabschluss.jpg" alt=""></a>
+        </div>
+        <div class="choosing-section-div">
+            <button class="choosing-button"><a class="my-doc" href="#">PROJEKTEN</a></button>
+            <a href="https://github.com/AhmedB88/projects"  target="_blank"><img class="preview" src="bilder/Html-source-code.png" alt=""></a>
+        </div>
+        <div class="button-div"> 
+            <button onclick="previousButtonEnd()" class="next-previous">PREVIOUS</button>
+        </div>
+    </div>
+   
+ 
+    <script class="lebenslauf-img" src="main.js"></script>
+</body>
+</html>

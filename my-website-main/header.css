@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    flex: 1fr 1fr;
+    justify-content: end;
+    position: fixed;
+    top: 20;
+    left: 0;
+    right: 20;
+    background-color: #0b0f12;
+    height: 55px;
+    z-index: 2;
+}
+.header-right-section-div{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.header-left-section-div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}

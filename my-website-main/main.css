@@ -1,0 +1,64 @@
+body{
+    background-color: #0b0f12;
+}
+
+.main-section-div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    top: 100px;
+    right: 0px;
+    left: 0px;
+}
+.main-left-section-div{
+    display: block;
+    height: 677px;
+    width: fit-content;
+    background-color: #0b0f12;
+    margin-right: 100px;
+    align-items: end;
+    padding-top: 173px;
+}
+.bewerbung-div{
+    display: block;
+    height: 577px;
+    width: 1500px;
+    left: 100px;
+    background-color: #0b0f12;
+    margin-left: 100px;
+    padding-top: 17px;
+}
+.main-right-section-div{
+    display: block;
+    height: 850px;
+    width: fit-content;
+    margin-left: 100px;
+    
+}
+.hidden-form{
+    display: none;
+}
+.my-doc{
+    font: 700;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 20px;
+    
+
+}
+.preview:hover  {
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, 1.5);
+    transform:scale(1.1);
+}
+.choosing-section-div{
+    width: 400px;
+}
+.button-div{
+    display: block;
+    bottom: 200px;
+    position: fixed;
+}

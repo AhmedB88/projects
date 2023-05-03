@@ -1,0 +1,22 @@
+.sidebar{
+    display: flex;
+    background-color: #0b0f12;
+    top: 57px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+    width: 72px;
+    position: fixed;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 40px;
+    
+}
+.link-button{
+    height: 30px;
+    width: 100px;
+    background-color: #0b0f12;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 0px;
+}

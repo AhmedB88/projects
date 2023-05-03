@@ -1,0 +1,27 @@
+.me-img{
+    display: block;
+    object-fit: cover;
+    height: 850px;
+    border-color: #0b0f12;
+    border-radius: 100px;
+    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+
+}
+.social-media-img{
+    display: block;
+    height: 15px;
+    border-radius: 0px;
+    margin-top: 20px;
+   
+}
+.preview{
+    height: 400px;
+    max-width: 290px;
+    display: block;
+    object-fit: cover;
+    border-color: #0b0f12;
+    border-radius: 20px;
+    transition: transform 330ms ease-in-out;
+    margin-top: 10px;
+    margin-left: 30px;
+}
