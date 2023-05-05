@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button{
+        height: 35px;
+        width: 35px;
+        margin-left: 2px;
+        margin-top: 5px;
+       }
+       button:hover{
+        background-color: rgb(226, 226, 226);
+       }
+       button:active{
+        background-color: rgb(170, 170, 170);
+       }
+
+       .typebar{
+        height: 35px;
+        width: 160px;
+        
+       }
+
+       body{
+        background-color: gray;
+       }
+
+    </style>
+</head>
+<body >  
+    <input  class="typebar" type="number" id="v1">
+   
+
+    
+    <button onclick="reset()">CE</button>
+ 
+    <div> 
+        <div>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button onclick="addtion ()">+</button>
+        </div>
+
+        <div>
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onclick="subtraction ()">-</button>
+        </div>
+        
+        <div>
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button onclick="division ()">/</button>
+        </div>
+
+        <div>
+            <button onclick="cal ()">=</button> 
+            <button onclick="zero()">0</button> 
+            <button onclick="pi()"> &#x213C; </button>
+            <button onclick="multiplication ()">x</button>
+        </div>
+        
+        
+    </div>
+
+
+    <script>
+
+    
+           
+           
+    
+    
+  function calend(){
+    console.log(controller);
+    console.log(first);
+    console.log(second);
+    if(controller.includes(1)){
+        let sum = first[0] + second[0];
+        const value1 = document.getElementById('v1');
+        value1.value = sum;
+    }
+    if(controller.includes(2)){
+        let sub = first[0] - second[0];
+        const value1 = document.getElementById('v1');
+        value1.value = sub;
+    }
+    if(controller.includes(3)){
+        let div = first[0] / second[0]; 
+        const value1 = document.getElementById('v1');
+        value1.value = div;
+    }
+    if(controller.includes(4)){
+        let mult = first[0] * second[0]; 
+        const value1 = document.getElementById('v1');
+        value1.value = mult;
+    }
+    
+    };
+
+
+
+    function addtion(){
+        first.pop();
+        second.pop();
+        controller.pop();
+        controller.push(1);
+        const value1 = document.getElementById('v1')
+        let x = +value1.value;
+        first.push(x);
+        value1.value = '';
+        
+    };
+    function subtraction(){
+        first.pop();
+        second.pop();
+        controller.pop();
+        controller.push(2);
+        const value1 = document.getElementById('v1')
+        let x = +value1.value;
+        first.push(x);
+        value1.value = '';
+        
+    };
+    function division(){
+        first.pop();
+        second.pop();
+        controller.pop();
+        controller.push(3);
+        const value1 = document.getElementById('v1')
+        let x = +value1.value;
+        first.push(x);
+        value1.value = '';
+        
+    };
+    function multiplication(){
+        first.pop();
+        second.pop();
+        controller.pop();
+        controller.push(4);
+        const value1 = document.getElementById('v1')
+        let x = +value1.value;
+        first.push(x);
+        value1.value = '';
+        
+    };
+    
+    function direct(){
+        let value1 = document.getElementById('v1')
+        let a = +value1.value;
+        let b = console.log (a)
+        value1.value = a;
+    };
+    function cal(){
+    
+    const value1 = document.getElementById('v1')
+    let y = +value1.value;
+    second.push(y);
+    value1.value = '';
+    calend() 
+    };
+
+  
+
+
+    let first = [];
+    let second = []; 
+    let controller = [];
+
+    function zero()
+    {
+        let value1 = document.getElementById('v1')
+        value1.value += 0;
+    };
+    function one(){
+        let value1 = document.getElementById('v1')
+        value1.value += 1;
+    };
+    function two(){
+        let value1 = document.getElementById('v1')
+        value1.value += 2;
+    };
+    function three(){
+        let value1 = document.getElementById('v1')
+        value1.value += 3;
+    };
+    function four(){
+        let value1 = document.getElementById('v1')
+        value1.value += 4;
+    };
+    function five(){
+        let value1 = document.getElementById('v1')
+        value1.value += 5;
+    };
+    function six(){
+        let value1 = document.getElementById('v1')
+        value1.value += 6;
+    };
+    function seven(){
+        let value1 = document.getElementById('v1')
+        value1.value += 7;
+    };
+    function eight(){
+        let value1 = document.getElementById('v1')
+        value1.value += 8;
+    };
+    function nine(){
+        let value1 = document.getElementById('v1')
+        value1.value += 9;
+    };
+    function pi(){
+        let value1 = document.getElementById('v1')
+        value1.value = 3.14159265359;
+    };
+    function reset(){
+        first.pop();
+        second.pop();
+        controller.pop();
+        let value1 = document.getElementById('v1')
+        value1.value = '';
+    }
+
+
+    </script>
+</body>
+</html>
