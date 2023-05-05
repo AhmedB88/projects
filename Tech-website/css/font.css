@@ -1,0 +1,112 @@
+p{  
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    font-size: 20px;
+    letter-spacing: .2em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    
+}
+li{
+    color: white;
+    box-sizing: border-box;
+    display: list-item;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    list-style-position: outside;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+    text-align: center;
+    text-size-adjust: 100%;
+    word-wrap: break-word;
+    
+    
+   
+
+}
+h2{  
+    
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    font-size: 20px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.share{
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    font-size: 17px;
+    font-style: normal;
+}
+.price-tag{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    margin-top: 15px;
+    border-bottom: 0.8px solid rgb(38, 38, 38);
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+h4{
+    color: white;
+    text-align: start;
+    display: block;
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+.product-details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    text-decoration-color: white;
+    text-decoration-line: none;
+    text-decoration-thickness: auto;
+    text-decoration-style: solid;
+    text-size-adjust: 100%;
+    cursor: pointer;
+    margin-top: 34px;
+
+}

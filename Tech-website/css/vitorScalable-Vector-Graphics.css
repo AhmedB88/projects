@@ -1,0 +1,15 @@
+.bottom-side-div{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+.vitorScalable-Vector-Graphics{
+    display: inline-block;
+    height: 60px;
+}
+
+.web-link{
+    display: inline-block;
+    margin-block: 16px;
+}

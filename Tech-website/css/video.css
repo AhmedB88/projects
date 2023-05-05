@@ -1,0 +1,18 @@
+.video{
+    margin-top: 150px;
+    width: 1705px;
+    height: 872px;
+    position: absolute;
+    border-width: 0px;
+}
+.video-div{
+    display: flex;
+
+    height: 1100px;
+    justify-content: center;
+
+
+  
+}
+
+

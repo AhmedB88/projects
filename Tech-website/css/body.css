@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(0, 0, 0);
+    height: 3000px;
+    width: auto;
+    
+}
+.web-description{
+    width: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+}
+.contacts-icon-div{
+    height: 19px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}

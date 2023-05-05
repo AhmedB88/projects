@@ -1,0 +1,37 @@
+.OPTIMIZATION{
+    display: block;
+    margin: auto;
+    border-bottom: 0.8px solid rgb(38, 38, 38);
+    border-top: 0.8px solid rgb(38, 38, 38);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.optimization-title{
+    display: block;
+    border-top: 20px;
+    margin-bottom: 40px;
+
+
+}
+.optimization-info{
+    display: flex;
+    justify-content:center;
+
+
+}
+.optimization-img{
+    display: block;
+    align-self: center;
+    margin-right: 150px;
+   
+ 
+}
+.optimization-properties{
+    display: block;
+    align-self: center;
+    width: 300px;
+    
+  
+   
+
+}

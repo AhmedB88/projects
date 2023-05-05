@@ -1,0 +1,35 @@
+.header{
+    z-index: 5;
+    height: 125px;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.8px solid rgb(38, 38, 38);
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    width: 112px;
+
+
+}
+.mid-section{
+    display: flex;
+    align-items: center;
+    margin-right:170px;
+   
+
+}
+.left-section{
+    display: flex;
+    align-items: center;
+
+}

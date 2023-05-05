@@ -1,0 +1,71 @@
+.logo{
+    height: 100px;
+    vertical-align: top;
+    object-fit: cover;
+  
+}
+.menu-logo{
+    height: 20px;
+    
+}
+.login-logo{
+    width: 40px;
+    
+}
+.opt-img{
+    width: 400px;
+    border-radius: 20px;
+    margin-right: 200px;
+    margin-left: 0px;
+}
+.contact-icon{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    margin-right: 5px;
+    border-radius: 3px;
+
+}
+.gmail-logo{
+    height: 15px;
+    width: 17px;
+    background-color: black;
+    margin-bottom: 1px;
+    border-radius: 3px;
+}
+.software-product-cover{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    padding: 50px;
+    transition:ease-in-out 3s;
+    cursor: pointer;
+    transition-duration: 1s;
+    border-radius: 90px;
+
+}
+.software-product-cover:hover {
+    width: 800px;
+    height: 850px;
+    object-fit: cover;
+}
+.hardware-product-cover{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    padding: 50px;
+    transition:ease-in-out 3s;
+    transition-duration: 1s;
+    cursor: pointer;
+    border-radius: 90px;
+
+    
+    
+}
+.hardware-product-cover:hover {
+    width: 800px;
+    height: 850px;
+    object-fit: cover;
+}

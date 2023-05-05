@@ -1,0 +1,20 @@
+.product-details-div{
+    margin-top: 34px;
+}
+
+.software-product{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    margin-left: 50px;
+    position: relative;
+    margin-right: 30px;
+}
+.hardware-product{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    margin-right: 50px;
+    position: relative;
+    margin-left: 30px;
+}

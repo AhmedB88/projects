@@ -1,0 +1,22 @@
+.REVIEWS-name{
+    display: inline-block;
+    align-self: center;
+    width: 300px;
+    margin-right: 200px;
+}
+.REVIEWS-img{
+    display: inline-block;
+    align-self: center;
+}
+.OPTIMIZATION-reviews{
+    display: block;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 0.8px solid rgb(38, 38, 38);
+    border-top: 0.8px solid rgb(38, 38, 38);
+}
+.REVIEWS-info{
+    display: flex;
+    justify-content:center;
+}
