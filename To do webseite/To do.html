@@ -1,0 +1,155 @@
+<html>
+
+
+
+<head>
+    <title>Document</title>
+   
+</head>
+
+
+
+<body bis_register="doc1">
+    <input type="text" id="Todo-Title">
+    <input type="date" id="date-picker">
+    <button onclick="addtodos ()">Add To do</button>
+    <div id="todo-list" ></div>
+
+    <script>
+    
+    // Model 
+    const savedtodo = JSON.parse(localStorage.getItem('todos'));
+
+
+    if(Array.isArray(savedtodo)){
+        todos = savedtodo;
+    }
+
+    else{
+        todos = [ 
+    {
+        title : 'get food',
+        dueDate : '2021-10-40',
+        id :'1id'
+    }
+    ,
+    {
+        title: 'wash car',
+        dueDate: '2020-01-10',
+        id : '2id'
+    }
+    ,
+    {
+        title: 'drive car',
+        dueDate: '2020-01-10',
+        id : '3id'
+    }]
+    };
+
+            
+    render();
+
+
+    // Create a todo
+    function createtodo(text, dueDate){
+
+        const id = '' + new Date().getTime ();
+        todos.push({
+            title: text,
+            dueDate: dueDate,
+            id: id,
+        });
+        savetodos();
+     
+    };
+
+    // Deleting a todo 
+    function removetodo(idToDelete){
+        todos = todos.filter ( function(todo) {
+            if ( todo.id === idToDelete) {
+                return false;
+            }
+
+            else {
+                return true;
+            }
+        
+        } )
+
+        
+       render()
+    };
+    
+    // Saving a todolist  
+
+    function savetodos(){
+        localStorage.setItem('todos', JSON.stringify(todos));
+    };
+
+
+
+    // Controller 
+    function addtodos(){
+        // 1.identifing "textbox" with "Todo-title", which in a input
+        const textbox = document.getElementById('Todo-Title');
+        // setting the inner value of textbox which is some input to the x text 
+        const text = textbox.value;
+        // 1.same 
+        const datepicker = document.getElementById('date-picker');
+        // 2.same
+        const dueDate = datepicker.value;
+        // creating id based on time in ms 
+        const id = '' + new Date().getTime ();
+        createtodo(text, dueDate)
+        render();
+        };
+        
+
+    // View 
+    function render(){
+        document.getElementById('todo-list').innerHTML= '';
+        // how to create a loop
+        todos.forEach(function (todos) {
+        // how to create a div with inner value-text 
+        const element = document.createElement('div');
+        element.innerText=todos.title + ' ' + todos.dueDate  ;
+        const todoList = document.getElementById('todo-list');
+        todoList.appendChild(element);
+        // How to create a button in another div
+        const deletebutton = document.createElement('button');
+        deletebutton.innerText = 'Delete';
+        element.appendChild(deletebutton);
+        deletebutton.onclick = deletetodo;
+        deletebutton.id = todos.id;
+        // How to add style in js 
+        deletebutton.style = 'margin-left: 12px';
+        })};
+
+
+    function deletetodo(event) {
+        const deletebutton = event.target;
+        const idToDelete = deletebutton.id;
+        removetodo(idToDelete)
+
+        };
+        
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+       
+    </script>
+
+
+</body>
+</html>
