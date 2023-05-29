@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*int main (){
-    std::string Name [] = {"Spongboob", "Patrick", "Squitward", "sandy", "Ahmad"};
+    std::string Name [] = {"Spongboob", "Patrick", "Squitward", "sandy"};
     int Names = sizeof(Name)/sizeof(std::string);
     for (int i = 0; i < Names; i++)
     {
